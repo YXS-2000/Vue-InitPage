@@ -1,5 +1,5 @@
 import axios from 'axios'
 
-export function getWeather(){
-    return axios.get()
+export function getWeather(address){
+    return axios.get('https://qqlykm.cn/api/api/tq.php?city=' + address)
 }
